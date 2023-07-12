@@ -1,0 +1,26 @@
+package divisao;
+
+import java.util.Scanner;
+
+public class Divisao {
+
+    /*Faça um programa que receba dois números, calcule e mostre a divisão 
+      do primeiro pelo segundo. Sabe-se que o segundo número não pode ser 
+      zero, portanto, não é necessário se preocupar com isso neste exercício.*/
+    
+    public static void main(String[] args) {
+        
+        Scanner ler = new Scanner(System.in);
+        
+        int n1, n2, divisao;
+        
+        System.out.println("Digite o Primeiro Número: ");
+        n1 = ler.nextInt();
+        System.out.println("Digite o Segundo Número: ");
+        n2 = ler.nextInt();
+        divisao = n1 / n2;
+        System.out.println("O Resultado é : " + divisao);       
+        
+    }
+    
+}
