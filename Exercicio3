@@ -1,0 +1,34 @@
+package subtracao;
+
+import java.util.Scanner;
+
+public class Subtracao {
+
+    /*Faça um programa que receba três notas de um estudante, calcule e 
+      mostre a média aritmética entre elas.*/
+    
+    public static void main(String[] args) {
+        
+        Scanner ler = new Scanner(System.in);
+        
+        int nota1, nota2, nota3, media;
+
+        /*Recebendo nota1*/
+        System.out.println("Digite a Primeira Nota: ");
+        nota1 = ler.nextInt();
+
+        /*Recebendo nota2*/
+        System.out.println("Digite a Segunda Nota: ");
+        nota2 = ler.nextInt();
+
+        /*Recebendo nota3*/
+        System.out.println("Digite a Terceira Nota: ");
+        nota3 = ler.nextInt();
+
+        /*Média*/
+        media = (nota1 + nota2 + nota3) / 3;
+        System.out.println("A Média do Aluno é : " + media);       
+        
+    }
+    
+}
