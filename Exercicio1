@@ -1,0 +1,25 @@
+package subtracao;
+
+import java.util.Scanner;
+
+public class Subtracao {
+
+    /*Faça um programa que receba dois números, calcule e mostre a 
+      subtração do primeiro número pelo segundo.*/
+    
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner ler = new Scanner(System.in);
+        
+        int n1, n2, subtracao;
+        
+        System.out.println("Digite o Primeiro Número: ");
+        n1 = ler.nextInt();
+        System.out.println("Digite o Segundo Número: ");
+        n2 = ler.nextInt();
+        subtracao = n1 - n2;
+        System.out.println("O Resultado é : " + subtracao);       
+        
+    }
+    
+}
