@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class Subtracao {
 
     /*Faça um programa que receba dois números, calcule e mostre a 
-      subtração do primeiro número pelo segundo.*/
+      subtração do primeiro número pelo segundo.
+    */
     
     public static void main(String[] args) {
         // TODO code application logic here
