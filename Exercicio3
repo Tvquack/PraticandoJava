@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class Subtracao {
 
     /*Faça um programa que receba três notas de um estudante, calcule e 
-      mostre a média aritmética entre elas.*/
+      mostre a média aritmética entre elas.
+    */
     
     public static void main(String[] args) {
         
