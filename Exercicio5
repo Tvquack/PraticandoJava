@@ -1,0 +1,36 @@
+package salariobase;
+
+import java.util.Scanner;
+
+public class SalarioBase {
+
+    /*Faça um programa que receba o salário base de um funcionário, calcule 
+      e mostre o salário a receber, sabendo-se que o funcionário tem 
+      gratificação de 5% sobre o salário base (que será acrescentado ao 
+      salário) e paga imposto de 7% sobre este salário (o que será 
+      descontado do salário).
+      */
+     
+    public static void main(String[] args) {
+        
+        Scanner ler = new Scanner(System.in);
+        
+        double salarioBase, gratificacao, imposto, salarioFinal;
+        
+        System.out.println("Digite o Salário Base: ");
+        salarioBase = ler.nextDouble();
+
+        /*Gratificação %*/
+        gratificacao = salarioBase * (5.0 / 100);
+        System.out.println("Gratificação: R$ " + gratificacao);
+
+        /*Imposto %*/
+        imposto = salarioBase * (7.0 / 100);
+        System.out.println("Imposto: R# " + imposto);
+
+        /*Total*/
+        salarioFinal = salarioBase + gratificacao - imposto;
+        System.out.println("Salário Final: R$ " + salarioFinal);
+    }
+    
+}
