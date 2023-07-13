@@ -1,0 +1,24 @@
+package areaquadrado;
+
+import java.util.Scanner;
+
+public class AreaQuadrado {
+
+    /*Faça um programa que calcule e mostre a área de um quadrado. Sabese que
+     𝐴 = 𝑙𝑎𝑑𝑜2
+    */
+    public static void main(String[] args) {
+               
+        Scanner quadrado = new Scanner(System.in);
+        
+        int lado; 
+                        
+        System.out.println("Digite o valor do lado: ");
+        lado = quadrado.nextInt();  
+
+        //Área do Quadrado
+        int area = lado * lado;
+        System.out.println(" A area do quadrado e: " + area);
+    }
+    
+}
