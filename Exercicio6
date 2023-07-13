@@ -23,13 +23,13 @@ public class SalarioFinal {
         System.out.println("Informe o valor das vendas: ");
         vendas = ler.nextDouble();
 
-        /*Comissão 4%*/
+        //Comissão 4%
         comissao = (vendas * 4)/100;
         System.out.println("Comissão: "+ comissao);
 
-        /*Salário Final*/
+        //Salário Final
         total = salarioFixo + comissao;
-        System.out.println("O Salário Final é: " + total);             
+        System.out.println("O Salário Final é: R$" + total);             
                        
     }
     
