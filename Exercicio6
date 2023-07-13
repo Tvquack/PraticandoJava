@@ -1,0 +1,36 @@
+package salariofinal;
+
+import java.util.Scanner;
+
+public class SalarioFinal {
+
+    /*Um funcionário recebe um salário fixo mais 4% de comissão sobre as 
+      vendas (4% do valor das vendas efetuadas pelo funcionário). Faça um 
+      programa que receba o salário fixo do funcionário e o valor de suas 
+      vendas, calcule e mostre a comissão e seu salário final.
+     */
+    public static void main(String[] args) {
+        
+        Scanner ler = new Scanner(System.in);
+        
+        String nome;
+        double salarioFixo, comissao, total, vendas;
+        
+        System.out.println("Digite o nome do funcionário:  ");
+        nome = ler.next();
+        System.out.println("Informe o Salário: ");
+        salarioFixo = ler.nextDouble();
+        System.out.println("Informe o valor das vendas: ");
+        vendas = ler.nextDouble();
+
+        /*Comissão 4%*/
+        comissao = (vendas * 4)/100;
+        System.out.println("Comissão: "+ comissao);
+
+        /*Salário Final*/
+        total = salarioFixo + comissao;
+        System.out.println("O Salário Final é: " + total);             
+                       
+    }
+    
+}
