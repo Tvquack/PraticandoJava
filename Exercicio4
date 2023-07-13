@@ -18,7 +18,11 @@ public class DescontoPreco {
         
         System.out.println("Digite o preço do produto: ");
         preco = produto.nextDouble();
+
+        //Desconto
         desconto = (preco * 10)/100;
+
+        //Valor Final
         valor = preco - desconto;
         System.out.println("O novo preço e: " + valor);
     }
