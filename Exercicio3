@@ -14,19 +14,19 @@ public class Subtracao {
         
         int nota1, nota2, nota3, media;
 
-        /*Recebendo nota1*/
+        //Recebendo nota1
         System.out.println("Digite a Primeira Nota: ");
         nota1 = ler.nextInt();
 
-        /*Recebendo nota2*/
+        //Recebendo nota2
         System.out.println("Digite a Segunda Nota: ");
         nota2 = ler.nextInt();
 
-        /*Recebendo nota3*/
+        //Recebendo nota3
         System.out.println("Digite a Terceira Nota: ");
         nota3 = ler.nextInt();
 
-        /*Média*/
+        //Média 
         media = (nota1 + nota2 + nota3) / 3;
         System.out.println("A Média do Aluno é : " + media);       
         
