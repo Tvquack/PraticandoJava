@@ -1,0 +1,44 @@
+package calculoidade;
+
+import java.util.Scanner;
+
+public class CalculoIdade {
+
+    /*Faça um programa que receba o ano de nascimento de uma pessoa e o 
+      ano atual, calcule e mostre:
+      a. a idade dessa pessoa em anos;
+      b. a idade dessa pessoa em meses;
+      c. a idade dessa pessoa em dias (considerando que cada ano 
+      possui 365 dias);
+      d. a idade dessa pessoa em semanas (cada ano possui 52 
+      semanas).
+    */
+    public static void main(String[] args) {
+        
+        Scanner calculo = new Scanner(System.in); 
+        
+        int anonasc, anoatual, idade, meses, dias, semanas;
+        
+        System.out.println("Digite o Ano de Nascimento: ");
+        anonasc = calculo.nextInt();
+        System.out.println("Digite o Ano Atual: ");
+        anoatual = calculo.nextInt();
+
+        //Calculo idade
+        idade = anoatual - anonasc;
+        System.out.println("A sua Idade é: " + idade + "anos");
+
+        //Calculo Meses
+        meses = idade * 12;
+        System.out.println("A sua Idade em Meses: " + meses + "meses");
+
+        //Calculo Dias
+        dias = idade * 365;
+        System.out.println("A sua Idade em Dias: " + dias + "dias");
+
+        //Calculo Semanas
+        semanas = idade * 52;
+        System.out.println("A sua Idade em Semanas: " + semanas + "semanas");
+    }
+    
+}
