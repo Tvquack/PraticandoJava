@@ -1,0 +1,39 @@
+package medidapes;
+
+import java.util.Scanner;
+
+public class MedidaPes {
+
+    /*Sabe-se que:
+      1 pé = 12 polegadas
+      1 jarda = 3 pés
+      1 milha = 1.760 jardas
+      Faça um programa que receba uma medida em pés , faça as 
+      conversões a seguir e mostre os resultados.
+      a. polegadas;
+      b. jardas;
+      c. milhas.
+    */
+    public static void main(String[] args) {
+        
+        Scanner converte = new Scanner(System.in);
+        
+        double pes, jarda, polegadas, milha;
+        
+        System.out.println("Digite a Medida em Pés: ");
+        pes = converte.nextDouble();
+
+        //Polegadas
+        polegadas = pes * 12;
+        System.out.println("A Medida em Polegadas: "+ polegadas);
+
+        //Jardas
+        jarda = pes / 3;
+        System.out.println("A Medida em Jardas: " + jarda);
+
+        //Milhas
+        milha = jarda / 1.760;
+        System.out.println("A Medida em Milhas: " + milha);
+    }
+    
+}
