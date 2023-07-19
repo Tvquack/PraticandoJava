@@ -38,7 +38,7 @@ public class HorasTrabalhadas {
 
         //Imposto
         imposto = (salariobruto * 3) / 100;
-        System.out.println("Seu Imposto é: " + imposto);
+        System.out.println("Seu Imposto é: R$" + imposto);
 
         //Salário a Receber
         salariorecebe = salariobruto - imposto;
