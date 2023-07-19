@@ -25,12 +25,12 @@ public class HorasTrabalhadas {
         nome = hora.nextLine();
         System.out.println("Digite o Salário Mínimo: ");
         salariominimo = hora.nextDouble();
-        System.out.println("Digite o Valor da Hora trabalhada: ");
-        valorhora = hora.nextDouble();
+        System.out.println("Digite as Horas trabalhadas: ");
+        horatrabalhada = hora.nextDouble();
 
-        //Horas Trabalhadas
-        horatrabalhada = salariominimo / 10;
-        System.out.println("Sua Hora trabalhada é: R$" + horatrabalhada);
+        //Valor Hora
+        valorhora = salariominimo / 10;
+        System.out.println("O valor da Hora trabalhada é: R$" + valorhora);
 
         //Salário Bruto
         salariobruto = horatrabalhada * valorhora;
