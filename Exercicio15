@@ -1,0 +1,25 @@
+package convertertemperatura;
+
+import java.util.Scanner;
+
+public class ConverterTemperatura {
+
+    /*Faça um programa que receba uma temperatura em Celsius, calcule e 
+      mostre essa temperatura em Fahrenheit. Sabe-se que
+      F = 9 X C / 5 + 32
+     */
+    public static void main(String[] args) {
+        
+        Scanner temp = new Scanner(System.in);
+        
+        double Celsius, Fahrenheit;
+        
+        System.out.println("Digite a temperatura em Celsius: ");
+        Celsius = temp.nextDouble();
+
+        //Convertendo Celsius em Fahrenheit
+        Fahrenheit = ((9 * Celsius) / 5) + 32;
+        System.out.println("A temperatura em Fahrenheit é: " + Fahrenheit);
+    }
+    
+}
