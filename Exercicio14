@@ -1,0 +1,33 @@
+package consumoquilowatt;
+
+import java.util.Scanner;
+
+public class ConsumoQuilowatt {
+
+    /*Sabe-se que o quilowatt de energia custa um quinto do salário mínimo. 
+      Faça um programa que receba o valor do salário mínimo e a quantidade 
+      de quilowatts consumida por uma residência, calcule e mostre:
+      a. o valor de cada quilowatt;
+      b. o valor a ser pago por essa residência;
+      c. o valor a ser pago com desconto de 15%
+     */
+    public static void main(String[] args) {
+        
+        Scanner consumo = new Scanner(System.in);
+        
+        double salarioMinimo, quantconsumo, valorqw, total, desconto;
+        
+        System.out.println("Informe o Salário Mínimo: ");
+        salarioMinimo = consumo.nextDouble();
+        System.out.println("Informe o Quilowatt da Casa: ");
+        quantconsumo = consumo.nextDouble();
+        valorqw = salarioMinimo/5;
+        System.out.println("O Valor de cada Quilowatt: R$" + valorqw);
+        total = valorqw * quantconsumo;
+        System.out.println("O valor Total: R$" + total);
+        System.out.println("Seu Consumo: R$" + quantconsumo);
+        desconto = total - (total * 15) / 100;
+        System.out.println("Valor com desconto de 15%: R$" + desconto);
+    }
+    
+}
