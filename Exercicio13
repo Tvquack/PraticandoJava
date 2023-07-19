@@ -1,0 +1,50 @@
+package horastrabalhadas;
+
+import java.util.Scanner;
+
+public class HorasTrabalhadas {
+
+    /*Faça um programa que receba o número de horas trabalhadas e o valor 
+      do salário mínimo, calcule e mostre o salário a receber seguindo estas 
+      regras:
+      a. a hora trabalhada vale um décimo do salário mínimo;
+      b. o salário bruto equivale ao número de horas trabalhadas 
+      multiplicado pelo valor da hora trabalhada;
+      c. o imposto equivale a 3% do salário bruto;
+      d. o salário a receber equivale ao salário bruto menos o imposto.
+    */
+    public static void main(String[] args) {
+        
+        Scanner  hora = new Scanner(System.in);
+        
+        String nome;
+        double salariominimo, horatrabalhada, salariobruto, valorhora;
+        double imposto, salariorecebe;
+        
+        System.out.println("Digite o Nome: ");
+        nome = hora.nextLine();
+        System.out.println("Digite o Salário Mínimo: ");
+        salariominimo = hora.nextDouble();
+        System.out.println("Digite o Valor da Hora trabalhada: ");
+        valorhora = hora.nextDouble();
+
+        //Horas Trabalhadas
+        horatrabalhada = salariominimo / 10;
+        System.out.println("Sua Hora trabalhada é: R$" + horatrabalhada);
+
+        //Salário Bruto
+        salariobruto = horatrabalhada * valorhora;
+        System.out.println("Seu Salário Bruto é: R$" + salariobruto);
+
+        //Imposto
+        imposto = (salariobruto * 3) / 100;
+        System.out.println("Seu Imposto é: " + imposto);
+
+        //Salário a Receber
+        salariorecebe = salariobruto - imposto;
+        System.out.println("Seu Salário Final é: R$" + salariorecebe);
+        
+        
+    }
+    
+}
